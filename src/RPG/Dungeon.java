@@ -29,7 +29,7 @@ public class Dungeon {
 
 	public void run() {
 
-		for (int i = 0; i < this.floors.size(); i++) {
+		for (int i = 0; i < this.floors.size() && hero.IsAlive(); i++) {
 			System.out.println(this.floors.get(i).resolve());
 		}
 	}
