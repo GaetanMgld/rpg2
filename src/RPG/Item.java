@@ -19,7 +19,6 @@ public interface Item {
 	 */
 	public void setPod(int pod);
 	
-	public void use(Character targer);
+	public void use(Character target);
 	
-	//public void utiliser(Personnage cible, Personnage from);
 }

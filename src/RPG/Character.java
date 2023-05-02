@@ -92,7 +92,7 @@ public class Character {
 		this.armor = armor;
 	}
 
-	public void combattre(Character other) {
+	public void fight(Character other) {
 		float degats = (this.getWeapon() != null) ? this.getWeapon().getDamages(): 0;
 		degats -= (other.getArmor() != null) ? other.getArmor().getDefense() * 0.1f : 0;
 		
@@ -108,7 +108,7 @@ public class Character {
 		return this.getLp() > 0;
 	}
 	
-	public void Piller(Character other) {
+	public void loot(Character other) {
 		if(this.getArmor().getDefense() < other.getArmor().getDefense())
 			other.getArmor().use(this);
 		else
